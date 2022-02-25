@@ -19,10 +19,10 @@ public class Baekjoon2581 {
             if (an == 0)
                 arr.add(a);
         }
-        Iterator it = arr.iterator();
+        Iterator<Integer> it = arr.iterator();
         int answer = 0;
         while (it.hasNext()) {
-            answer += (Integer) it.next();
+            answer += it.next();
         }
         if (arr.isEmpty()) {
             System.out.println(-1);
