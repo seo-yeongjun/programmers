@@ -17,7 +17,7 @@ import java.util.Map.Entry;
 학급 회장으로 선택된 기호를 출력합니다.
 */
 
-public class Inflean3_7 {
+public class Inflean4_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
