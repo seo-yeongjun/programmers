@@ -1,6 +1,4 @@
-import java.util.Collections;
-import java.util.Scanner;
-import java.util.TreeSet;
+import java.util.*;
 /*
 1. 올바른 괄호
 
@@ -23,6 +21,28 @@ NO
 
 public class Inflean5_1 {
     public static void main(String[] args) {
-        //아직 안품
+        Scanner sc = new Scanner(System.in);
+        LinkedList<Character> stack = new LinkedList<>();
+        String str = sc.nextLine();
+        for (char c : str.toCharArray()) {
+            switch (c) {
+                case '(': {
+                    stack.push(c);
+                    break;
+                }
+                case ')': {
+                    try {
+                        stack.pop();
+                    } catch (NoSuchElementException e) {
+                        System.out.println("NO");
+                        return;
+                    }
+                }
+            }
+        }
+        if (stack.isEmpty())
+            System.out.println("YES");
+        else
+            System.out.println("NO");
     }
 }
