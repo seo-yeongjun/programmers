@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 /*
 3. 최대 매출

@@ -1,6 +1,4 @@
 import java.io.*;
-import java.util.LinkedList;
-import java.util.Scanner;
 
 public class Baekjoon11718 {
     public static void main(String[] args) throws IOException {
